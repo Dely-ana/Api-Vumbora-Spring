@@ -1,0 +1,274 @@
+:root {
+  --PrimariColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(255, 255, 235);
+  --cardHover: rgb(225, 225, 235);
+}
+
+/*Contempla tudo na pagina */
+.container {
+  display: flex;
+  flex-wrap: wrap ;
+  /* background: red; */
+
+
+}
+
+
+
+/* topo: Derstinos mais visitados */
+.tituloDiv{
+  width: 100%;  
+
+}
+
+/* topo: Derstinos mais visitados */
+.titulo{
+  position: relative;
+  width: max-content;
+  color: var(--textColor);
+  margin: 1rem ;
+  margin-top: -9rem;
+  z-index: 2;
+  
+}
+/* topo: Destinos mais visitados */
+ .titulo::after {
+  position: absolute;
+  content: '';
+  background: var(--SecondaryColor);
+  height: 4px;
+  width: 177px;
+  right: 0;
+  bottom: 2px;
+  z-index: -1;
+
+  
+ }
+
+ /*div total inclui imagem*/
+ .cardestino{ 
+    background: var(--cardBG);
+    border-radius: .5rem;
+    border-style:ridge;
+    justify-content: space-around;
+    width: 16rem;
+    height: 60rem;
+    overflow: hidden;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+ 
+  
+}
+
+
+.cardestino:hover{
+  background: var(--cardHover);
+  box-shadow: 1 4px 4px rgba(16, 127, 151, 0.549);
+  transition: 3s ease;
+  
+}
+
+/* div que inclui parte textual sem imagem*/
+ .cardInfodest {
+  width: 100%;
+  border-radius: .2rem;
+  overflow: hidden;
+  padding: 1rem;
+  height: 28rem;
+  margin-bottom: -10px;
+  
+
+
+}
+
+/*titulo com o nome das capitais*/
+.card-titulo{
+  text-align: center;
+  margin-top: 2rem;
+  
+
+  
+}
+
+/* Descrição dos lugares*/
+.subtitulo{
+  text-align: center;
+}
+
+/*Imagens */
+.img {
+  object-fit: cover;
+  transition: 2s ease;
+  overflow: hidden;
+  width: 17rem;
+  height: 36rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+
+
+}
+
+:hover img {
+  transform: scale(1.1);
+}
+
+/*localização */
+
+ .localizadest {
+  gap: 1.5rem;
+}
+
+/* icons dos detalhes */
+.icon{
+  color: var(--blackColor);
+  font-size: 2px;
+  align-self: center;
+  font-size: 18px;
+}
+
+/*nome das capitais*/
+ .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*div de preco*/
+.preco {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--greyText);
+  border-bottom: 1.5px solid var(--greyText);
+
+}
+
+.precom{
+  margin-bottom: 22rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--greyText);
+  border-bottom: 1.5px solid var(--greyText);
+
+}
+
+/* 
+.avaliar {
+  color: var(--textColor);
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: justify;
+} */
+
+/*valor */
+.smalldest{
+  text-align: center;
+  background: var(--gradientColor);
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  padding: 1px 10px;
+  font-size: 15px;
+
+}
+
+
+/* paragrafo*/
+.Paraf{
+  font-size: 3px;
+  overflow:hidden;
+  text-align: justify;
+  font-size: 15px;
+  height: 65%;
+  margin-top:-9px;
+  margin-bottom: 10rem;
+  
+
+ 
+ 
+  
+}
+
+/*descrição do botão de detalhes*/
+.desc {
+  font-size: 13px;
+  color: var(--textColor);
+  
+
+}
+
+.btnDest{
+  height: 2.3rem;
+  margin-left: 1rem;
+  width: 8rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--secondaryColor);
+  background:var(--gradientColor);
+}
+.btnDestb{
+  margin-top: 5.8rem;
+  height: 2.3rem;
+  margin-left: 1rem;
+  width: 8rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--secondaryColor);
+  background:var(--gradientColor);
+}
+.btnDestm{
+  margin-top: 1.8rem;
+  height: 2.3rem;
+  margin-left: 1rem;
+  width: 8rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--secondaryColor);
+  background:var(--gradientColor);
+}
+
+
+
+
+@media screen and (max-width:500px){
+  .container{
+      padding: 2rem;
+      margin-top: 5rem;
+
+  }
+
+    
+ .cardestino{
+  width: 50rem;
+ }
+ 
+
+
+}
+
+
+
+@media screen and (min-width: 700px){
+
+ .cardestino{
+ width: 30%; 
+ margin-bottom: 4rem;
+}
+.titulo{
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+}

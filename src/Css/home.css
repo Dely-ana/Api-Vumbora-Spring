@@ -1,0 +1,380 @@
+:root {
+    --PrimariColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(255, 255, 235);
+}
+
+.home {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    margin-top:-2rem;
+}
+
+ .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(234, 239, 240, 0.106);
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.home video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.homeContent {
+    width: 100%;
+    height: max-content;
+    padding: 8rem 1.5rem 3rem;
+    display: flex;
+    row-gap: 3rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    color: var(--whiteColor);
+    z-index: 100;
+
+}
+.textDiv {
+    padding: 2rem 0;
+    
+}
+
+.smallText {
+    font-size: 13px;
+    
+}
+
+.homeTitle {
+    position: relative;
+    font-size: 1.8rem;
+    
+}
+
+
+.homeTitle::after {
+    position: absolute;
+    background: var(--SecondaryColor);
+    height: 5px;
+    width: 105px;
+    right: 0px;
+    bottom: 5px;
+    z-index: -1;
+
+}   
+
+.cardDiv {
+    position: relative;
+    padding: 2rem 1rem;
+    background: rgba(148, 141, 224, 0.614);
+    border-radius: 10px;
+    gap: 1rem;
+
+    
+}
+
+ .cardDiv label {
+    display: block;
+    color: var(--textColor);
+    padding-bottom: 10px;
+    font-size: 500;
+
+
+}
+
+ .label_total {
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blackColor);
+    
+  
+
+}
+
+ .total {
+    color: var(--blackColor);
+    font-size: 18px;
+    padding-bottom: 10px;
+    /* margin-top: -25px; */
+    
+    
+}
+
+ .input {
+    height: 40px;
+    padding: 0 1rem;
+    background: var(--inputColor);
+    border-radius: 3rem;
+    padding-top: 7px;
+    
+
+}
+
+.input input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: -10rem;
+    
+
+}
+
+.input input::placeholder {
+    font-size: 13px;
+    padding-top: -10rem;
+   
+}
+.input .icon {
+    font-size: 18px;
+    color: var(--PrimaryColor);
+    margin-left: 98% !important;
+    margin-top: -5%!important;
+    object-position: 1px;
+
+}
+
+
+.input .input[type=range] {
+    background: #262697;
+ 
+
+}
+
+.searchOptions {
+    position: absolute;
+    background: var(--gradientColor);
+    width: max-content;
+    bottom: -0.7rem;
+    column-gap: .8rem;
+    padding: 5px 1rem;
+    border-radius: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.searchOptions:hover {
+    background: var(--PrimariColor);
+}
+
+.link{
+    text-decoration: none;
+    font-size: var(--SecondaryColor);
+}
+
+.icon {
+    font-size: 18px;
+}
+
+ .homeFooterIcons {
+    width: 100%;
+    justify-content: space-between;
+}
+
+ .icon {
+    font-size: 20px;
+    margin: 0 5px;
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+.icon:hover {
+    color: var(--PrimariColor);
+}
+
+.card-viagem{
+    width: 60rem;
+    height: 100%;
+    margin-left: 4rem;
+}
+
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:497px){
+    .input .icon {
+        font-size: 18px;
+        color: var(--PrimaryColor);
+        margin-left: 95% !important;
+        margin-top: -18%!important;
+        object-position: 1px;
+
+
+    }
+
+    .searchOptions {
+        margin-bottom: -5rem;
+        bottom: 1rem;
+        padding: 8px 1rem;
+        
+    }
+    
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .home .homeContent .textDiv .smallText {
+        font-size: 16px;
+
+    }
+
+    .homeTitle {
+        position: relative;
+        font-size: 2.3rem;
+        width: max-content;
+
+        
+    }
+
+    .input .icon {
+        font-size: 18px;
+        color: var(--PrimaryColor);
+        margin-left: 95% !important;
+        margin-top: -10%!important;
+        object-position: 1px;
+     
+
+
+    }
+    .searchOptions {
+        margin-bottom: -5rem;
+        bottom: 1rem;
+        padding: 8px 1rem;
+
+    }
+}
+
+    .home .homeContent .cardDiv {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 3rem;
+
+        
+    }
+
+   
+    
+
+
+@media screen and (min-width: 660px) {
+    .home .homeContent .cardDiv {
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+  
+
+}
+
+@media screen and (min-width: 840px) {
+    .home {
+        height: 80hv;
+    }
+
+    .homeContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    
+    }
+
+    .cardDiv {
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+
+    .cardDiv .inputDiv {
+        margin-bottom: 1rem;
+    }
+   
+
+    .input .icon {
+        font-size: 18px;
+        color: var(--PrimaryColor);
+        margin-left: 96% !important;
+        margin-top: -15%!important;
+        object-position: 1px;
+
+
+
+    }
+
+    .searchOptions {
+        bottom: 1rem;
+        padding: 8px 1rem;
+    }
+    
+
+    .searchOptions span {
+        font-size: 17px;
+    }
+
+
+
+@media screen and (min-width: 986px) {
+    .home {
+        height: 80hv;
+    }
+
+    .homeContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+     .cardDiv {
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .inputDiv {
+        margin-bottom: -1rem;
+    }
+
+    .input .icon {
+        font-size: 18px;
+        color: var(--PrimaryColor);
+        margin-left: 98% !important;
+        margin-top: -5%!important;
+        object-position: 1px;
+
+    }
+
+
+    .searchOptions {
+        margin-bottom: -5rem;
+        bottom: 1rem;
+        padding: 8px 1rem;
+    }
+
+    .searchOptions span {
+        font-size: 17px;
+    }
+}

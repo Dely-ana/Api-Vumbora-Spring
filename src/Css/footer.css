@@ -1,0 +1,576 @@
+:root {
+  --PrimariColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(255, 255, 235);
+}
+
+/* PAGINA GERAL*/
+.footer {
+  width: 100%;
+  height: max-content;
+  padding: 8rem 1.5rem 3rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-top: -10rem;
+  color: var(--whiteColor);
+  z-index: 100;
+}
+
+/* */
+
+.videoDiv {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  overflow: hidden;
+
+}
+
+/* */
+
+.videoDiv video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+/* DIV DO VIDEO */
+.videoDiv::after {
+  content: '';
+  position: absolute;
+  background: rgba(10, 84, 107, 0.307);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+
+}
+
+.secContent {
+  width: 100%;
+  height: max-content;
+  padding: 2rem initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 2rem;
+  z-index: 100;
+
+}
+
+/* DIV TODA DO MANTENHA CONTAT0 */
+.contactDiv {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+/* TEXTO MANTENHA CONTATO */
+.text small {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--whiteColor);
+}
+
+/*  TEXTO VIAJE CONOSCO*/
+.text h2 {
+  color: var(--whiteColor);
+  font-size: 1.8rem;
+  font-size: 10px;
+
+
+}
+
+
+
+/* .inputDiv {
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+  background: red;
+} */
+
+/* INPUT DO DIGITE SEU EMAIL */
+.inputDiv input {
+  width: 90%;
+  padding: .5rem .6rem;
+  border-radius: 3rem;
+  border: 1px solid var(--whiteColor);
+  outline: none;
+  background: transparent;
+  color: var(--whiteColor);
+
+
+
+}
+
+/* NOME QUE FICA DENTRO DO INPUT DE MANDAR  */
+.inputDiv input::placeholder {
+  color: var(--whiteColor);
+  opacity: .5;
+  font-size: 13px;
+  text-align: center;
+
+
+}
+
+/* INPUT E BOTÃO DE MANDAR  */
+.btnFooter {
+  width: 40%;
+  padding: .5rem .6rem;
+  border-radius: 3rem;
+  border-color:transparent;
+  justify-content: center;
+  color: var(--whiteColor);
+  font-weight: 500;
+  font-size: 10px;
+  margin-left: 8rem;
+  gap: .5rem;
+  background: var(--SecondaryColor);
+
+}
+
+/* ICON DO MANDAR  */
+.btnFooter .icon {
+  font-size: 13px;
+
+
+}
+
+/* CARD TODO DO FOOTER */
+.footerCard {
+  position: relative;
+  padding: 1rem 1rem 4rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: var(--bodyColor);
+  width: 40rem;
+  margin-left: 6rem;
+  margin-bottom: 4rem;
+  margin-top: -3rem;
+  height: 17rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+
+
+}
+
+/*DIV DO VUMBORA, PARAGRAFO E SOCIAIS*/
+.footerIntro {
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: .5rem;
+  padding: 10px;
+  margin-top: -1rem;
+
+
+
+}
+
+/* LOGO DO VUMBORA*/
+.logoDiv .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: -15px;
+  margin-top: -3rem;
+
+
+}
+
+
+/* PARAGRAFO */
+.footerParagraph {
+  font-size: 10px;
+  color: var(--textColor);
+  text-align: justify;
+
+
+}
+
+/* DIV MIDIAS SOCIAS */
+.footerSocials {
+  font-size: 2px;
+
+}
+
+/* ICONS DO FOOTER*/
+.icon {
+  font-size: 3px;
+  color: var(--blackColor);
+  color: var(--primaryColor);
+
+
+
+}
+
+/* HOVER ICONS DO FOOTER*/
+.icon:hover {
+  color: var(--SecondaryColor);
+}
+
+/* CARD DA LISTA */
+.footerLinks {
+  flex-basis: 50%;
+  width: 100%;
+  background: var(--whiteColorDeam);
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  padding: auto;
+  margin-left: -4rem;
+  overflow: hidden;
+
+
+
+}
+
+
+/* TITULO DA LIST (NOSSA AGENCIA) */
+.groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: .5rem;
+
+
+
+}
+
+/* DIV DA LIST*/
+.footerList {
+  font-size: 10px;
+  color: var(--textColor);
+  transition: .3s ease-in-out;
+  list-style: none outside;
+
+
+
+}
+
+/* ICONS DA LISTA NOSSA AGENCIA */
+.footerList .icon {
+  font-size: 10px;
+  color: var(--greyText);
+
+}
+
+/* HOVER DA LISTA NOSSA AGENCIA*/
+.footerList:hover {
+  color: var(--primaryColor);
+  transform: translate(7px);
+
+
+}
+
+/* RODA PE COM OS DIREITOS DO VUMBORA */
+.footerDiv {
+  font-size: 11px;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--SecondaryColor);
+  padding: .5rem 2rem;
+
+
+
+}
+
+/* FONT DO RODA PE COM OS DIREITOS DO VUMBORA */
+.small {
+  justify-content: center;
+  margin-left: 11rem;
+
+
+
+}
+
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 818px) {
+  .footer {
+    width: 88%;
+  }
+
+  .footerCard {
+    width: 100%;
+    height: 55%;
+    margin-left: 2.1rem;
+    margin-top: 11rem;
+  }
+
+  .footerIntro {
+    height: 7rem;
+  }
+
+  .videoDiv {
+    width: 88%;
+    height: 100%;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 22rem;
+  }
+
+
+  .contactDiv {
+    font-size: 6px;
+    margin-left: 3rem;
+    margin-bottom: -9rem;
+    margin-top: 4rem;
+
+  }
+
+
+  .inputDiv .btn-footer {
+    width: 60%;
+    margin-left: 40%;
+  }
+
+  .logoDiv {
+    font-size: 12PX;
+  }
+
+  .footerParagraph {
+    font-size: 7px;
+  }
+
+  .footerSocials .icon {
+    font-size: 13px;
+    margin-left: -4px;
+  }
+
+  .groupTitle {
+    display: block;
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 1px;
+    margin-top: 4px;
+
+  }
+
+
+  .footerLinks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -6px;
+    margin-left: 2px;
+    height: 57%;
+
+    
+  }
+
+
+
+  .footerList {
+    font-size: 7px;
+    padding: 1px;
+
+    
+
+  }
+
+
+  .footerDiv {
+    font-size: 7px;
+    margin-left: -9rem;
+  }
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 819px) {
+  .contactDiv {
+    font-size: 8px;
+    margin-top: 19rem;
+    margin-left: -9rem;
+  }
+
+
+  .footerParagraph {
+    display: flex;
+  }
+
+
+  .groupTitle {
+    font-size: 12px;
+  }
+
+
+  .footerList {
+    font-size: 10px;
+    padding: 1px;
+    
+  }
+
+  .videoDiv {
+    /* width: 92%; */
+    margin-left: -2%;
+    height: 100%;
+    margin-top: 10rem;
+  }
+
+  .footerCard {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+
+  .footerLinks {
+    display: flex;
+
+  }
+
+  .footerList {
+    width: 100%;
+    padding: 3px;
+
+  }
+
+
+  .contactDiv {
+    font-size: 10px;
+    margin-top: 5rem;
+    justify-content: space-around;
+
+  }
+
+}
+
+
+
+@media screen and (min-width: 820px) {
+
+
+  .footerCard {
+    flex-direction: row;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    width: 85%;
+    height: 20rem;
+
+  }
+
+  .videoDiv {
+    width: 96%;
+    margin-top: 22rem;
+    height: 50rem;
+  }
+
+  .footerIntro {
+    margin-top: 1rem;
+    height: 12rem;
+    font-size: 20px;
+
+  }
+
+
+  .contactDiv {
+    margin-top: 18rem;
+    font-size: 9px;
+    margin-left: 1rem;
+
+  }
+
+  .text small{
+    font-size: 13px;
+
+  }
+  .text h2 {
+font-size: 13px
+  }
+
+  .btnFooter{
+    margin-left: 20rem;
+  }
+  .inputDiv .btn-footer {
+    font-size: 6px;
+
+
+  }
+
+  .logoDiv {
+    font-size: 12px;
+  }
+
+  .footerSocials .icon {
+    font-size: 13px;
+  }
+
+  .footerParagraph {
+    font-size: 12px;
+    display: flex;
+  }
+
+  .footerIntro {
+    margin-top: 1rem;
+    height: 6rem;
+    margin-top: -2px;
+
+  }
+
+  .footerSocials {
+    font-size: 10px;
+  }
+
+
+  .footerLinks {
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    background: var(--whiteColorDeam);
+
+
+  }
+
+  .groupTitle {
+    font-size: 13px;
+    margin-left: 1rem;
+
+
+  }
+
+  .footerList {
+    font-size: 11px;
+  }
+
+  .footerDiv .small {
+    font-size: 8px;
+    height: 1rem;
+    margin-left: 19rem;
+
+  }
+
+
+
+}

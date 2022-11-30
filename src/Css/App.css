@@ -1,0 +1,103 @@
+
+:root {
+  --PrimariColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(255, 255, 235);
+  --cardHover: rgb(225, 225, 235);
+}
+
+/*CONTAINER CREATE*/
+.container-create {
+  background: var(--greyText);
+  border-radius: 10px;
+}
+
+.cont{
+  background:var(--bodyColor);
+  width: 40rem;
+  height: 40rem;
+  border: 1px solid var(--greyText);
+  border-radius: 10px;
+  padding-top: -30rem;
+  margin-bottom: 4rem;
+
+}
+
+
+.card-create{
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+/* .form-group{
+
+} */
+
+.btnC{
+  border-radius: 8px;
+  margin-bottom: -20rem;
+  margin-left: .5rem;
+  border: none;
+
+}
+
+
+/*VIEW USUARIO*/
+.container-view{
+  width: 40rem;
+  height: 35rem;
+  border-radius: 12px;
+  background: var(--cardHover);
+  border: 1px solid var(--greyText);
+
+}
+
+.row{
+  padding: 12px;
+
+
+}
+
+.lbl{
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.btn{
+  margin-bottom: -20rem;
+  
+}
+
+
+/*LIST USUARIOS*/
+
+.container-List{
+  width: 100%;
+  background: var(--cardBG);
+
+}
+
+
+
+@media screen and (max-width:500px){
+
+.container-create{
+  width: 100%;
+}
+
+ .cont{
+  width: 20rem;
+  margin-bottom: 5rem;
+ }
+
+} 
+
